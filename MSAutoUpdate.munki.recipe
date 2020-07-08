@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.MSAutoUpdate</string>
+	<key>Input</key>
+	<dict>
+		<key>CHANNEL</key>
+		<string>Production</string>
+		<key>LOCALE_ID</key>
+		<string>1033</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/Microsoft</string>
+		<key>NAME</key>
+		<string>MSAutoUpdate</string>
+		<key>PRODUCT</key>
+		<string>AutoUpdate04</string>
+		<key>VERSION</key>
+		<string>latest</string>
+		<key>munki_required_update_name</key>
+		<string></string>
+		<key>pkginfo</key>
+		<dict>
+			<key>blocking_applications</key>
+			<array>
+				<string>Microsoft AutoUpdate</string>
+				<string>Microsoft Error Reporting</string>
+			</array>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>Admin Utilities</string>
+			<key>developer</key>
+			<string>Microsoft</string>
+			<key>display_name</key>
+			<string>Microsoft AutoUpdate</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.autopkg.munki.MSAutoUpdate</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict>
+			<key>MSOfficeMacURLandUpdateInfoProvider</key>
+			<dict>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/MSOfficeUpdates/MSOfficeMacURLandUpdateInfoProvider.py</string>
+				<key>sha256_hash</key>
+				<string>cfd2eaef11d8861f5977433282e1e5d37bcd09a58c058ef72d78815c5b4aa49e</string>
+			</dict>
+		</dict>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.autopkg.download.MSAutoUpdate</key>
+			<dict>
+				<key>git_hash</key>
+				<string>55e47128864841e568cf20ccd2b852fea48faa50</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/MSOfficeUpdates/MSAutoUpdate.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>2ba93fe81aa5139473e64195772281dc1a87c2391bfbbda7a82c01ec5fee8262</string>
+			</dict>
+			<key>com.github.autopkg.download.MSOfficeMacProduct</key>
+			<dict>
+				<key>git_hash</key>
+				<string>55e47128864841e568cf20ccd2b852fea48faa50</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/MSOfficeUpdates/MSOfficeMacProduct.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>9d98baa020cb9228ff75122bdd7b92a20196cedb9f5983c140e7c1e771cf26cf</string>
+			</dict>
+			<key>com.github.autopkg.munki.MSAutoUpdate</key>
+			<dict>
+				<key>git_hash</key>
+				<string>55e47128864841e568cf20ccd2b852fea48faa50</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/MSOfficeUpdates/MSAutoUpdate.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>a1a8ea08c49be08a0f92252de5b666148f75bee7f0591a0d32787a3d0a48928c</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

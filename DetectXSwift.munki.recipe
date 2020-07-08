@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.DetectXSwift</string>
+	<key>Input</key>
+	<dict>
+		<key>DESTINATION_PATH</key>
+		<string>/Applications/Utilities</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/sqwarq</string>
+		<key>NAME</key>
+		<string>DetectX Swift</string>
+		<key>SPARKLE_FEED_URL</key>
+		<string>https://s3.amazonaws.com/sqwarq.com/AppCasts/dtxswift.xml</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>macOS Security</string>
+			<key>category</key>
+			<string>Security</string>
+			<key>developer</key>
+			<string>Sqwarq</string>
+			<key>display_name</key>
+			<string>DetectX</string>
+			<key>items_to_copy</key>
+			<array>
+				<dict>
+					<key>destination_path</key>
+					<string>%DESTINATION_PATH%</string>
+					<key>source_item</key>
+					<string>DetectX Swift.app</string>
+				</dict>
+			</array>
+			<key>name</key>
+			<string>DetectX Swift</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.autopkg.wardsparadox.munki.DetectXSwift</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.autopkg.wardsparadox.download.DetectXSwift</key>
+			<dict>
+				<key>git_hash</key>
+				<string>08507b91872978e72dbbb90671d059d5e4c921ed</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.wardsparadox-recipes/Sqwarq/DetectXSwift.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>9100d930297cef9c044ba00c12718ce3d813b8cdcbc3f832132e0c5234780764</string>
+			</dict>
+			<key>com.github.autopkg.wardsparadox.munki.DetectXSwift</key>
+			<dict>
+				<key>git_hash</key>
+				<string>08507b91872978e72dbbb90671d059d5e4c921ed</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.wardsparadox-recipes/Sqwarq/DetectXSwift.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>3bc2bebe158c0daacbaf67c4a732da76a5e94f1d6b496d21b2efa5c082c29fab</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

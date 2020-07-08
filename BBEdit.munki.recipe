@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.BBEdit</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/BBEdit</string>
+		<key>NAME</key>
+		<string>BBEdit</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>BBEdit is the leading professional HTML and text editor for the Mac. Specifically crafted in response to the needs of Web authors and software developers, this award-winning product provides a plethora of features for editing, searching, and manipulation of text. BBEdit transforms text with high performance.</string>
+      <key>category</key>
+			<string>Developer Tools</string>
+      <key>display_name</key>
+			<string>BBEdit</string>
+      <key>developer</key>
+			<string>Barebones Software</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>postinstall_script</key>
+			<string>#!/bin/sh
+# Copy command-line tool resources out of .app bundle
+CMD_TOOL_DIR=/usr/local/bin
+CMD_MAN_DIR=/usr/local/share/man/man1
+HELPER_BIN_SRC_DIR=/Applications/BBEdit.app/Contents/Helpers
+HELPER_MAN_SRC_DIR=/Applications/BBEdit.app/Contents/Resources
+LN=/bin/ln
+
+# create dirs if they don't already exist
+for DIR in "$CMD_TOOL_DIR" "$CMD_MAN_DIR"; do
+    [ -d "$DIR" ] || mkdir -p -m 775 "$DIR"
+done
+# make symlinks to binaries and manpages
+for TOOL in bbdiff bbfind bbresults; do
+    "$LN" -sf "$HELPER_BIN_SRC_DIR/$TOOL" "$CMD_TOOL_DIR/$TOOL"
+    "$LN" -sf "$HELPER_MAN_SRC_DIR/$TOOL.1" "$CMD_MAN_DIR/$TOOL.1"
+done
+"$LN" -sf "$HELPER_BIN_SRC_DIR/bbedit_tool" "$CMD_TOOL_DIR/bbedit"
+"$LN" -sf "$HELPER_MAN_SRC_DIR/bbedit.1" "$CMD_MAN_DIR/bbedit.1"
+            </string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.autopkg.munki.bbedit</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict>
+			<key>BarebonesURLProvider</key>
+			<dict>
+				<key>git_hash</key>
+				<string>a46693f4b0f0176bc1ee07496c223cfca41b1348</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/Barebones/BarebonesURLProvider.py</string>
+				<key>sha256_hash</key>
+				<string>9d057626a1fa54ab487d0e7372fb97366cbad5c64b17a12bdd730f60563527f6</string>
+			</dict>
+		</dict>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.autopkg.download.bbedit</key>
+			<dict>
+				<key>git_hash</key>
+				<string>55e47128864841e568cf20ccd2b852fea48faa50</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/Barebones/BBEdit.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>6d8e8c3699f23f9c0511f6e2d6a14c7400b890a729f688014adb287d3666eb03</string>
+			</dict>
+			<key>com.github.autopkg.munki.bbedit</key>
+			<dict>
+				<key>git_hash</key>
+				<string>53a4d0735151a6260a82da8583a8e7284445f9d9</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/Barebones/BBEdit.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>cb7d397832f1543df75a4faf2fb6565a74a9d11870a259984fc9bd3ca9aafee6</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

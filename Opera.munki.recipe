@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Opera</string>
+	<key>Input</key>
+	<dict>
+		<key>APP_DESTINATION</key>
+		<string>/Applications</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/opera</string>
+		<key>NAME</key>
+		<string>Opera</string>
+		<key>UPDATE_URL</key>
+		<string>https://autoupdate.geo.opera.com/</string>
+		<key>USER_AGENT</key>
+		<string>Opera autoupdate agent/1.0.0</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>A web browser developed by Opera Software.</string>
+			<key>developer</key>
+			<string>Opera</string>
+			<key>category</key>
+			<string>Browsers</string>
+			<key>display_name</key>
+			<string>Opera</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.bochoven.recipes.Opera.munki</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict>
+			<key>OperaUpdateInfoProvider</key>
+			<dict>
+				<key>git_hash</key>
+				<string>efeaab6cf934692ea81865584a5cee6e600ccb30</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.bochoven-recipes/Opera/OperaUpdateInfoProvider.py</string>
+				<key>sha256_hash</key>
+				<string>8363043b6a5fee7f68f2b9e6ad1c3a5dd5e3389cc69262f1bc5bc0a4b1e3136c</string>
+			</dict>
+		</dict>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.bochoven.recipes.Opera.download</key>
+			<dict>
+				<key>git_hash</key>
+				<string>8d27dba163ed36782a410fdbd98434f65f96bb09</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.bochoven-recipes/Opera/Opera.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>9a552cd538edc086f6fb4597363fbfa0a9989dc6117b9440668d5b9ff61d59d7</string>
+			</dict>
+			<key>com.github.bochoven.recipes.Opera.munki</key>
+			<dict>
+				<key>git_hash</key>
+				<string>edeebced992cf5f6fe84e86d004c656f9245ae3b</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.bochoven-recipes/Opera/Opera.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>a9ba845cc86dfc529b17ef52194f61fb783a8b9a751aedfdd652bfdcac17706b</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

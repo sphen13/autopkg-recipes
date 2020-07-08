@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Adium</string>
+	<key>Input</key>
+	<dict>
+		<key>BRANCH</key>
+		<string>release</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>Adium</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Adium is a free instant messaging application for Mac OS X that can connect to AIM, MSN, Jabber, Yahoo, and more.</string>
+      <key>display_name</key>
+			<string>Adium</string>
+      <key>developer</key>
+			<string>Adium</string>
+      <key>category</key>
+      <string>Communication</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.autopkg.munki.Adium</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.autopkg.download.Adium</key>
+			<dict>
+				<key>git_hash</key>
+				<string>c340582a0126573e2df7ac0ad422f2b697165cbe</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/Adium/Adium.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>a113f1afeedf7a297d06fdeb2ba3d5247610762bf9cf44d7ae8372b2ad55560d</string>
+			</dict>
+			<key>com.github.autopkg.munki.Adium</key>
+			<dict>
+				<key>git_hash</key>
+				<string>777a9f86e194d363cebcfc3246f4c530776fefbf</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/Adium/Adium.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>00b8795f9875d1ce6d2a23746b1269c33862679a0a42122427f76626cfc6917d</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

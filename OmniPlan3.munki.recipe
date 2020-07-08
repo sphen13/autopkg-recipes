@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.OmniPlan3</string>
+	<key>Input</key>
+	<dict>
+		<key>APPCAST_URL</key>
+		<string>https://update.omnigroup.com/appcast/com.omnigroup.%NAME%</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/omnigroup</string>
+		<key>NAME</key>
+		<string>OmniPlan3</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>OmniPlan is designed to help you visualize, maintain, and simplify your projects. Break down tasks, optimize the required resources, control costs, and monitor your entire plan—all at a glance. Collaborate with your colleagues and share every detail, update a calendar with your days off, or mix and match. Accept and reject changes one-by-one or all in one go. OmniPlan provides features like Gantt charts, schedules, summaries, milestones, and critical path highlighting to let you manage all of your activities. From customizable views to fast data entry, OmniPlan helps you manage projects that are as simple or complex as you need them to be—without the complexity.</string>
+			<key>display_name</key>
+			<string>OmniPlan 3</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+			<key>developer</key>
+			<string>The Omni Group</string>
+			<key>category</key>
+			<string>Productivity</string>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.autopkg.munki.omniplan3</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.autopkg.download.omnigroupproduct</key>
+			<dict>
+				<key>git_hash</key>
+				<string>046710aa7b7e2f9c2c905c7113046e69c5766076</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/OmniGroup/OmniGroupProduct.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>714d5006583cc813a5d5bbda5e3fb6e55f82c1fa9aac861453c76c1c01d98e30</string>
+			</dict>
+			<key>com.github.autopkg.download.omniplan3</key>
+			<dict>
+				<key>git_hash</key>
+				<string>94a5eca61d0f051c1a08680dadb9dbbf618759c2</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/OmniGroup/OmniPlan3.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>34abe3cd646f8cfc3aef9c03d783347bd4beab5c6a2c981ad708fca1b8f63574</string>
+			</dict>
+			<key>com.github.autopkg.munki.omniplan3</key>
+			<dict>
+				<key>git_hash</key>
+				<string>c1f6d48bde460c350e4b61d7b9adaf7324264989</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/OmniGroup/OmniPlan3.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>2979512742951f5d9b98b09d7f7700be89d70576f264913618b55b0fd0eb25b0</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

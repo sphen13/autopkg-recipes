@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.coconutBattery</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>coconutBattery</string>
+		<key>SPARKLE_FEED_URL</key>
+		<string>https://coconut-flavour.com/updates/coconutBattery.xml</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Displays info about your laptop battery.</string>
+			<key>developer</key>
+			<string>Christoph Sinai</string>
+      <key>category</key>
+			<string>Utilities</string>
+			<key>display_name</key>
+			<string>coconutBattery</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.homebysix.munki.coconutBattery</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.homebysix.download.coconutBattery</key>
+			<dict>
+				<key>git_hash</key>
+				<string>2feb78ffce4f48b99041d52da9445bf0b3308b8f</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/coconutBattery/coconutBattery.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>247905e8639e3078210a01cae2a0e6ea8fd55f9df3c88b83dd0c60e586e73f59</string>
+			</dict>
+			<key>com.github.homebysix.munki.coconutBattery</key>
+			<dict>
+				<key>git_hash</key>
+				<string>ce2e59330b7039cefcab2975af9fc2b47334305d</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/coconutBattery/coconutBattery.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>1edc338e95235e1a5a6b5d468b33abc97ec85adc65ef8192a31a6e48d5402116</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

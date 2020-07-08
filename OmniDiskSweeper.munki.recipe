@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.OmniDiskSweeper</string>
+	<key>Input</key>
+	<dict>
+		<key>APPCAST_URL</key>
+		<string>https://update.omnigroup.com/appcast/com.omnigroup.%NAME%</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/omnigroup</string>
+		<key>NAME</key>
+		<string>OmniDiskSweeper</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>OmniDiskSweeper shows you the files on your drive, in descending order by size, and letting you decide what to do with them. Delete away, but exercise caution.</string>
+			<key>display_name</key>
+			<string>OmniDiskSweeper</string>
+			<key>minimum_os_version</key>
+			<string>10.8</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+			<key>developer</key>
+			<string>The Omni Group</string>
+			<key>category</key>
+			<string>Utilities</string>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.autopkg.munki.OmniDiskSweeper</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.autopkg.download.OmniDiskSweeper</key>
+			<dict>
+				<key>git_hash</key>
+				<string>54ea22158535c7f67140d06287e00786a6b734f5</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/OmniGroup/OmniDiskSweeper.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>1c6c8265087a4fdb170f2caf8f733b672864901ef7d284257eda02814637ae0f</string>
+			</dict>
+			<key>com.github.autopkg.download.omnigroupproduct</key>
+			<dict>
+				<key>git_hash</key>
+				<string>046710aa7b7e2f9c2c905c7113046e69c5766076</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/OmniGroup/OmniGroupProduct.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>714d5006583cc813a5d5bbda5e3fb6e55f82c1fa9aac861453c76c1c01d98e30</string>
+			</dict>
+			<key>com.github.autopkg.munki.OmniDiskSweeper</key>
+			<dict>
+				<key>git_hash</key>
+				<string>54ea22158535c7f67140d06287e00786a6b734f5</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/OmniGroup/OmniDiskSweeper.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>b163c1aa5572b0af8c4b95b0df3f2c3fdb020ada3cc1e0bcebe112425f5b54ef</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

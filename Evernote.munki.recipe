@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Evernote</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/Evernote</string>
+		<key>NAME</key>
+		<string>Evernote</string>
+		<key>SPARKLE_FEED_URL</key>
+		<string>https://update.evernote.com/public/ENMacSMD/EvernoteMacUpdate.xml</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Evernote makes it easy to remember things big and small from your everyday life using your computer, phone, tablet and the web.</string>
+			<key>display_name</key>
+			<string>Evernote</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+      <key>category</key>
+			<string>Productivity</string>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.autopkg.munki.Evernote</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.autopkg.download.Evernote</key>
+			<dict>
+				<key>git_hash</key>
+				<string>ebcbf5b5b3e600b329bf15d412217fd5ecbb4ff8</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/Evernote/Evernote.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>0a4c58e9f0ff617bcefddf22e6dba8c5d50758ce952a9888264c47094f0dbf76</string>
+			</dict>
+			<key>com.github.autopkg.munki.Evernote</key>
+			<dict>
+				<key>git_hash</key>
+				<string>1a63ebc794e5feb519c95e5241e6ed00adcecd20</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/Evernote/Evernote.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>e06b5c074460371eef0a4b796c421474abfd211b05b9bbffb6668759baf441c6</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

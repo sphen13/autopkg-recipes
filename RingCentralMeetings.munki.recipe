@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.RingCentralMeetings</string>
+	<key>Input</key>
+	<dict>
+		<key>BUNDLE_ID</key>
+		<string>us.zoom.ringcentral</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/ringcentral</string>
+		<key>NAME</key>
+		<string>RingCentral Meetings</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>blocking_applications</key>
+			<array>
+				<string>RingCentral Meetings.app</string>
+			</array>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>Communication</string>
+			<key>description</key>
+			<string>Online videoconferencing app for RingCentral.</string>
+			<key>developer</key>
+			<string>RingCentral</string>
+			<key>display_name</key>
+			<string>RingCentral Meetings</string>
+			<key>minimum_os_version</key>
+			<string>10.10</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.homebysix.munki.RingCentralMeetings</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.homebysix.download.RingCentralMeetings</key>
+			<dict>
+				<key>git_hash</key>
+				<string>d6707a4fc47fec888191a0cd490a08f2d39e0d7b</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/RingCentral/RingCentralMeetings.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>b59feab9243a3360009341d9ecffb5d2a99b62061951cef43be80b9cab097856</string>
+			</dict>
+			<key>com.github.homebysix.munki.RingCentralMeetings</key>
+			<dict>
+				<key>git_hash</key>
+				<string>cb3280a5d540e2379108d5a1bba5ce6a33954b81</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/RingCentral/RingCentralMeetings.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>28cbd62c97745e132a1b77b3269eb76ec9372adcdea38075557e235479a3f9bd</string>
+			</dict>
+			<key>com.github.homebysix.pkg.RingCentralMeetings</key>
+			<dict>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/RingCentral/RingCentralMeetings.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>a7ab3ebf64bb2cc9812fcca2e26a9ad0f3e7331b44c8df71ccb21b30f590be68</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

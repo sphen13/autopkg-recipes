@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Spotify</string>
+	<key>Input</key>
+	<dict>
+		<key>DOWNLOAD_URL</key>
+		<string>https://download.scdn.co/Spotify.dmg</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/spotify</string>
+		<key>NAME</key>
+		<string>Spotify</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Spotify is a music streaming service offering unlimited streaming of selected music from a range of major and independent record labels.</string>
+      <key>developer</key>
+			<string>Spotify</string>
+      <key>display_name</key>
+			<string>Spotify</string>
+			<key>category</key>
+			<string>Music &amp; Audio</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>postinstall_script</key>
+			<string>#!/bin/bash
+                # Add directory traversal for the entire application and ensure
+                # all executables are executable by group and other
+                /bin/chmod -R go+rX /Applications/Spotify.app
+            </string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.autopkg.munki.Spotify</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.autopkg.download.Spotify</key>
+			<dict>
+				<key>git_hash</key>
+				<string>4f69d86d0d09b299d47b0f0197a03d97a67ad4ef</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/Spotify/Spotify.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>71b0fbf50f45a1b55b1cb483811bd129c590bc37e1bbed17defd1ad5609f5169</string>
+			</dict>
+			<key>com.github.autopkg.munki.Spotify</key>
+			<dict>
+				<key>git_hash</key>
+				<string>e77d8193751dd3969b7d960139deb230a8008282</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/Spotify/Spotify.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>07138fa4cbdd3e9f2a13765105722d375bb3257365c94a177dba7c63a60fe14b</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

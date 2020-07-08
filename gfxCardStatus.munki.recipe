@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.gfxCardStatus</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/gfxCardStatus</string>
+		<key>NAME</key>
+		<string>gfxCardStatus</string>
+		<key>SPARKLE_FEED_URL</key>
+		<string>https://gfx.io/appcast.xml</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>gfxCardStatus is an unobtrusive menu bar app for OS X that allows MacBook Pro users to see which apps are affecting their battery life by using the more power-hungry graphics.</string>
+      <key>category</key>
+			<string>Utilities</string>
+			<key>display_name</key>
+			<string>gfxCardStatus</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.keeleysam.recipes.gfxCardStatus.munki</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.keeleysam.recipes.gfxCardStatus.download</key>
+			<dict>
+				<key>git_hash</key>
+				<string>48cc2194ff3d410ff45dd93d864956970b9121d5</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.keeleysam-recipes/gfxCardStatus/gfxCardStatus.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>a4104b6eeb6b3957ae2236100c0f137a9eb43302fa5e93ade5075ee291b986d3</string>
+			</dict>
+			<key>com.github.keeleysam.recipes.gfxCardStatus.munki</key>
+			<dict>
+				<key>git_hash</key>
+				<string>bd68c2f451bb7d088705102a1a0fddc543c48f37</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.keeleysam-recipes/gfxCardStatus/gfxCardStatus.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>125c5a1c235e72be6c18b5816904ef0026b197dc406091e053e2ee1f5b568004</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

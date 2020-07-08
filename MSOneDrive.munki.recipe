@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.MSOneDrive</string>
+	<key>Input</key>
+	<dict>
+		<key>DISPLAY_NAME</key>
+		<string>%NAME%</string>
+		<key>MUNKI_CATEGORY</key>
+		<string>File Sharing</string>
+		<key>MUNKI_DEVELOPER</key>
+		<string>Microsoft</string>
+		<key>MUNKI_NAME</key>
+		<string>%NAME%</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/Microsoft/OneDrive</string>
+		<key>NAME</key>
+		<string>OneDrive</string>
+		<key>URL</key>
+		<string>https://go.microsoft.com/fwlink/?linkid=823060</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>%MUNKI_CATEGORY%</string>
+			<key>description</key>
+			<string>
+              Get to your files from anywhere, on any device, with Microsoft OneDrive. Share and work together with anyone in your work and life. With OneDrive for Business, you also get storage for your work files so you can share and collaborate on them with other people at your work or school/university. The OneDrive app for Mac makes it easy to work with your OneDrive files on your Mac.</string>
+			<key>developer</key>
+			<string>%MUNKI_DEVELOPER%</string>
+			<key>display_name</key>
+			<string>%DISPLAY_NAME%</string>
+			<key>minimum_os_version</key>
+			<string>10.12</string>
+			<key>name</key>
+			<string>%MUNKI_NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.apettinen.munki.MSOneDrive</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.apettinen.download.MSOneDrive</key>
+			<dict>
+				<key>git_hash</key>
+				<string>84f14b9c959d5f4ce498c6d9da6c0dbd21cb95d0</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.apettinen-recipes/MSOneDrive/MSOneDrive.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>3d2205f24f7bd6d637aedf8d509696ebc3f8c560b09fb0bda0e599467c79d629</string>
+			</dict>
+			<key>com.github.apettinen.munki.MSOneDrive</key>
+			<dict>
+				<key>git_hash</key>
+				<string>fc3cdd3ac64774b5e8b44943ccabb6d2019d8cba</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.apettinen-recipes/MSOneDrive/MSOneDrive.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>27e24bb33cfe7f35977a05830c32bb5f1118318102fa9d95eb9631f5fb136442</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

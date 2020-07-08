@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Hedge</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>Hedge</string>
+		<key>SPARKLE_FEED_URL</key>
+		<string>https://updates.devmate.com/nl.syncfactory.Hedge.Mac.xml</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Multiple backups of your media, fast and easy.</string>
+			<key>developer</key>
+			<string>The Sync Factory</string>
+			<key>display_name</key>
+			<string>Hedge</string>
+			<key>name</key>
+			<string>%NAME%</string>
+      <key>category</key>
+      <string>Video</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.macvfx.munki.Hedge</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.macvfx.download.Hedge</key>
+			<dict>
+				<key>git_hash</key>
+				<string>16de1377e13e5dd2d18e13df4e0fbd5974ef8415</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.macvfx-recipes/The Sync Factory/Hedge.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>0ab0db117d4772b960cb63af90b6c3224adcf96d9a4bba3e742c5e945a156dd2</string>
+			</dict>
+			<key>com.macvfx.munki.Hedge</key>
+			<dict>
+				<key>git_hash</key>
+				<string>16de1377e13e5dd2d18e13df4e0fbd5974ef8415</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.macvfx-recipes/The Sync Factory/Hedge.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>640950197b1cc54d9fcb9e951b90270cff06e88a580a71b16a11250f930ae7f2</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

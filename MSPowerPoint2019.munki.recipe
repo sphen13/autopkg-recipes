@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.MSPowerPoint2019</string>
+	<key>Input</key>
+	<dict>
+		<key>CHANNEL</key>
+		<string>Production</string>
+		<key>LOCALE_ID</key>
+		<string>1033</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/Microsoft/2019</string>
+		<key>NAME</key>
+		<string>MSPowerPoint2019</string>
+		<key>PRODUCT</key>
+		<string>PowerPoint2019</string>
+		<key>VERSION</key>
+		<string>latest</string>
+		<key>munki_required_update_name</key>
+		<string></string>
+		<key>pkginfo</key>
+		<dict>
+			<key>blocking_applications</key>
+			<array>
+				<string>Microsoft PowerPoint</string>
+				<string>Microsoft Error Reporting</string>
+				<string>Microsoft AutoUpdate</string>
+			</array>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>Productivity</string>
+			<key>developer</key>
+			<string>Microsoft</string>
+			<key>display_name</key>
+			<string>Microsoft PowerPoint for Mac</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.autopkg.munki.MSPowerPoint2019</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict>
+			<key>MSOfficeMacURLandUpdateInfoProvider</key>
+			<dict>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/MSOfficeUpdates/MSOfficeMacURLandUpdateInfoProvider.py</string>
+				<key>sha256_hash</key>
+				<string>cfd2eaef11d8861f5977433282e1e5d37bcd09a58c058ef72d78815c5b4aa49e</string>
+			</dict>
+		</dict>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.autopkg.download.MSOfficeMacProduct</key>
+			<dict>
+				<key>git_hash</key>
+				<string>55e47128864841e568cf20ccd2b852fea48faa50</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/MSOfficeUpdates/MSOfficeMacProduct.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>9d98baa020cb9228ff75122bdd7b92a20196cedb9f5983c140e7c1e771cf26cf</string>
+			</dict>
+			<key>com.github.autopkg.download.MSPowerPoint2019</key>
+			<dict>
+				<key>git_hash</key>
+				<string>55e47128864841e568cf20ccd2b852fea48faa50</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/MSOfficeUpdates/MSPowerPoint2019.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>b87cdbade17a979788df74ec2a6d6771ef47d1c0610b59f08326e75003529273</string>
+			</dict>
+			<key>com.github.autopkg.munki.MSPowerPoint2019</key>
+			<dict>
+				<key>git_hash</key>
+				<string>55e47128864841e568cf20ccd2b852fea48faa50</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/MSOfficeUpdates/MSPowerPoint2019.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>f5d0c30defca1d4a1e0e6fe7accd74eb341709c2bf5d0c8bbdbf95ecd636477f</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

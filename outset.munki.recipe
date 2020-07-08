@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.outset</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>config/outset</string>
+		<key>NAME</key>
+		<string>outset</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Automatically process packages and scripts at first boot</string>
+			<key>minimum_os_version</key>
+			<string>10.9.0</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.grahamgilbert.munki.outset</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.grahamgilbert.download.outset</key>
+			<dict>
+				<key>git_hash</key>
+				<string>87768d05ad964fab5d7a44850238c697126c486f</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.grahamgilbert-recipes/outset/outset.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>c71687ec2681d1b77b6ee933cb622e82d0ea305006e7322704f3da833848f3e8</string>
+			</dict>
+			<key>com.github.grahamgilbert.munki.outset</key>
+			<dict>
+				<key>git_hash</key>
+				<string>371acb53f782813ac6b5ccebe8df454ec73c1e1e</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.grahamgilbert-recipes/outset/outset.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>1aff5d667bfa89afa585f04db0c87b03415d32604cd24c30b6d4b1591c181573</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

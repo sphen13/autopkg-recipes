@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.MSTeams</string>
+	<key>Input</key>
+	<dict>
+		<key>DISPLAY_NAME</key>
+		<string>Microsoft Teams</string>
+		<key>MSTEAMS_ENVIRONMENT</key>
+		<string>production</string>
+		<key>MSTEAMS_PLATFORM</key>
+		<string>osx</string>
+		<key>MUNKI_CATEGORY</key>
+		<string>Communication</string>
+		<key>MUNKI_DESCRIPTION</key>
+		<string>Microsoft Teams is the new chat-centered workspace in Office 365. Keep all your content, tools, people, and conversations together in one place.</string>
+		<key>MUNKI_DEVELOPER</key>
+		<string>Microsoft</string>
+		<key>MUNKI_NAME</key>
+		<string>%NAME%</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/Microsoft/Teams</string>
+		<key>NAME</key>
+		<string>MSTeams</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>%MUNKI_CATEGORY%</string>
+			<key>description</key>
+			<string>%MUNKI_DESCRIPTION%</string>
+			<key>developer</key>
+			<string>%MUNKI_DEVELOPER%</string>
+			<key>display_name</key>
+			<string>%DISPLAY_NAME%</string>
+			<key>name</key>
+			<string>%MUNKI_NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.apettinen.munki.MSTeams</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict>
+			<key>com.github.apettinen.SharedProcessors/MSTeamsURLProvider</key>
+			<dict>
+				<key>git_hash</key>
+				<string>9480a43b9ade95c56e1f349c9cbecd560f33d3fe</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.apettinen-recipes/SharedProcessors/MSTeamsURLProvider.py</string>
+				<key>sha256_hash</key>
+				<string>adcc1e8eb5152ea0ad0aa74567df57b3362a4bfa723bd10c0acf565196975bca</string>
+			</dict>
+		</dict>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.apettinen.download.MSTeams</key>
+			<dict>
+				<key>git_hash</key>
+				<string>dafcd6a39ba45e02d80147c25c6881636828f856</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.apettinen-recipes/MSTeams/MSTeams.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>c5e919de410a9142086e2e4578c0a564ffe91b06d239576812db6b36207da6f4</string>
+			</dict>
+			<key>com.github.apettinen.munki.MSTeams</key>
+			<dict>
+				<key>git_hash</key>
+				<string>bd0479e3a226bc538b75db9151b945bed01b1916</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.apettinen-recipes/MSTeams/MSTeams.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>a16cec634e9d7ad6402e8af3ae88dafa07068441baa7d6883fdfcf4ddf51b089</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

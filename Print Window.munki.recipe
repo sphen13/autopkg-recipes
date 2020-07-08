@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Print Window</string>
+	<key>Input</key>
+	<dict>
+		<key>DOWNLOAD_URL</key>
+		<string>http://printwindowapp.com/software/printwindow.dmg</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>Print Window</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>Productivity</string>
+			<key>description</key>
+			<string>Print Window offers the ability to print a file listing directly from within the Mac OS X Finder. No more taking screenshots of windows or settling for text-only printouts of filenames only. Print Window provides the works: icons, file information, sorting and so much more!
+
+			The Standard edition is free but does not have all the features of the Advanced edition. Print Window Advanced Edition is available for purchase and includes all the features described on this page. Both editions come in the same executable file. Advanced features are enabled when a valid serial number is entered. A version comparison can be found at http://searchwaresolutions.com/differences/default.html</string>
+			<key>developer</key>
+			<string>Scott Crick</string>
+			<key>display_name</key>
+			<string>Print Window</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+			<key>uninstall_method</key>
+			<string>remove_copied_items</string>
+			<key>uninstallable</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.hobbithardcase.munki.PrintWindow</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.hobbithardcase.download.PrintWindow</key>
+			<dict>
+				<key>git_hash</key>
+				<string>0c928e5b042d617dd48cf85b3cd22aec3d347d16</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.HobbitHardcase-recipes/Scott Crick/Print Window.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>df5dcecb60ebc2bab9d66f5775ceae7352adaf9cffc499cef5bbda42dcad179a</string>
+			</dict>
+			<key>com.github.hobbithardcase.munki.PrintWindow</key>
+			<dict>
+				<key>git_hash</key>
+				<string>99ab43866b5fdd093aaf119c38eed98ae097353e</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.HobbitHardcase-recipes/Scott Crick/Print Window.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>8d0cfd47899a59a1c63330954e2fab6ec26dc804a661858d736a69c49086ab59</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

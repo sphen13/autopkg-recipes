@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.iTerm2</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/iTerm2</string>
+		<key>NAME</key>
+		<string>iTerm2</string>
+		<key>SPARKLE_FEED_URL</key>
+		<string>https://www.iterm2.com/appcasts/final.xml</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Powerful alternative to Terminal.app.</string>
+			<key>display_name</key>
+			<string>iTerm2</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+      <key>developer</key>
+      <string>George Nachman</string>
+			<key>category</key>
+			<string>Utilities</string>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.keeleysam.autopkg.munki.iTerm2</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.keeleysam.autopkg.download.iTerm2</key>
+			<dict>
+				<key>git_hash</key>
+				<string>4f972fb30fa6c89fcbebaf54036875eab34f4ddb</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.keeleysam-recipes/iTerm2/iTerm2.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>0f681284b98dd957e1c6b052a745647aee05ee7ade08530d0c6cdc62d8732a81</string>
+			</dict>
+			<key>com.github.keeleysam.autopkg.munki.iTerm2</key>
+			<dict>
+				<key>git_hash</key>
+				<string>f6df176e67433ef78fb1621ca56724a5e8bc4860</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.keeleysam-recipes/iTerm2/iTerm2.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>7a3f1cc7917cb7f8dd698e1cd86983a273e052369598848cb4afd07d42747f52</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

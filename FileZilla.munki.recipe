@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.FileZilla</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/FileZilla</string>
+		<key>NAME</key>
+		<string>FileZilla</string>
+		<key>RE_PATTERN</key>
+		<string>&lt;a href=\"(?P&lt;url&gt;http[s]?.*?(?P&lt;filename&gt;FileZilla_(?P&lt;version&gt;[\d.]+)_macosx.*?\.app\.tar\.bz2).*?)\"</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>FileZilla is a fast and reliable cross-platform FTP, FTPS and SFTP client.</string>
+			<key>display_name</key>
+			<string>FileZilla</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+      <key>category</key>
+      <string>File Sharing</string>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.keeleysam.recipes.FileZilla.munki</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.keeleysam.recipes.FileZilla.download</key>
+			<dict>
+				<key>git_hash</key>
+				<string>27a320db44f81acf00b275df5d7af8cbffbb8e44</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.keeleysam-recipes/FileZilla/FileZilla.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>4a6cf08ec60fe45370e53a14186bbe82ecf9f9168f093ef86f65e9a8cff3d207</string>
+			</dict>
+			<key>com.github.keeleysam.recipes.FileZilla.munki</key>
+			<dict>
+				<key>git_hash</key>
+				<string>acd2fc13cd2c11f7c9d062e72e60582d8accda20</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.keeleysam-recipes/FileZilla/FileZilla.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>410f61739fc3dec0fba5f85d06a9f3dabd361c2768699ad98118324d31dc9832</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

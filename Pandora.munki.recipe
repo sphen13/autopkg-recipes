@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Pandora</string>
+	<key>Input</key>
+	<dict>
+		<key>DOWNLOAD_URL</key>
+		<string>https://pdora.co/desktop_mac_download</string>
+		<key>curl_opts</key>
+		<array>
+			<string>--http1.1</string>
+		</array>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>Pandora</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Mac app for listening to music using the Pandora streaming service.</string>
+			<key>developer</key>
+			<string>Pandora Media, Inc.</string>
+			<key>display_name</key>
+			<string>Pandora</string>
+      <key>category</key>
+			<string>Music &amp; Audio</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.homebysix.munki.Pandora</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.homebysix.download.Pandora</key>
+			<dict>
+				<key>git_hash</key>
+				<string>e05b44d5c275eb19bf84df983bce06418850bda3</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Pandora/Pandora.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>8fb9f5c88861c01d28cebcc50f083edade55ebaf4fa3f58fb15b5e9054052e09</string>
+			</dict>
+			<key>com.github.homebysix.munki.Pandora</key>
+			<dict>
+				<key>git_hash</key>
+				<string>e05b44d5c275eb19bf84df983bce06418850bda3</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Pandora/Pandora.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>776f83c2bfc07ef67ee0d0a8e98fd6af137c477337ba1bb18170812940e58188</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

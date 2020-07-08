@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.OmniGraffle</string>
+	<key>Input</key>
+	<dict>
+		<key>APPCAST_URL</key>
+		<string>https://update.omnigroup.com/appcast/com.omnigroup.%NAME%</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+    <string>apps/omnigroup</string>
+		<key>NAME</key>
+		<string>OmniGraffle</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Need a diagram, process chart, quick page-layout, website wireframe or graphic design? OmniGraffle can help you make eye-popping graphic documents quickly by keeping lines connected to shapes even when they're moved, providing powerful styling tools, importing and exporting Microsoft Visio files, and magically organizing diagrams with just one click. Whether you need a quick sketch or an epic technical figure, OmniGraffle keeps it gorgeously understandable.</string>
+			<key>display_name</key>
+			<string>OmniGraffle</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+			<key>developer</key>
+			<string>The Omni Group</string>
+			<key>category</key>
+			<string>Productivity</string>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.autopkg.munki.omnigraffle</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.autopkg.download.omnigraffle</key>
+			<dict>
+				<key>git_hash</key>
+				<string>76afa460f8c5087bad054710949a19550e3ad540</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/OmniGroup/OmniGraffle.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>62c90ce9d1fdf7294e22612b7447b94f7b64119bf57bba08aec2e1bfc12347ed</string>
+			</dict>
+			<key>com.github.autopkg.download.omnigroupproduct</key>
+			<dict>
+				<key>git_hash</key>
+				<string>046710aa7b7e2f9c2c905c7113046e69c5766076</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/OmniGroup/OmniGroupProduct.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>714d5006583cc813a5d5bbda5e3fb6e55f82c1fa9aac861453c76c1c01d98e30</string>
+			</dict>
+			<key>com.github.autopkg.munki.omnigraffle</key>
+			<dict>
+				<key>git_hash</key>
+				<string>76afa460f8c5087bad054710949a19550e3ad540</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/OmniGroup/OmniGraffle.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>9230306157dee05d2665a0bc497aa0744c2b0e2a7d030170585e1ebc1c49f145</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.SequelPro</string>
+	<key>Input</key>
+	<dict>
+		<key>APP_DESTINATION</key>
+		<string>/Applications</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>SequelPro</string>
+		<key>SPARKLE_FEED_URL</key>
+		<string>https://www.sequelpro.com/appcast/app-releases.xml</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>Developer Tools</string>
+			<key>description</key>
+			<string>Sequel Pro is a fast, easy-to-use Mac database management application for working with MySQL databases.</string>
+			<key>developer</key>
+			<string>CocoaMySQL</string>
+			<key>display_name</key>
+			<string>SequelPro</string>
+			<key>minimum_os_version</key>
+			<string>10.5</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.jleggat.SequelPro.munki</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.jleggat.SequelPro.download</key>
+			<dict>
+				<key>git_hash</key>
+				<string>4bd30825a4299515ccfa93e3c81a12d71dcf2ce3</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.jleggat-recipes/SequelPro/SequelPro.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>128a9d4800013e09a3a193486d000931b258029f2498639c914239c895e32dd3</string>
+			</dict>
+			<key>com.github.jleggat.SequelPro.munki</key>
+			<dict>
+				<key>git_hash</key>
+				<string>443ed5ba3bcf04d0808100cf49758407f6d60fc0</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.jleggat-recipes/SequelPro/SequelPro.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>b69e21f29c3187a6231608437544ed27803762eb36e50656f3f654b9eb0fe731</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

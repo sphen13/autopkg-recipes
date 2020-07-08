@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Skype</string>
+	<key>Input</key>
+	<dict>
+		<key>DOWNLOAD_URL</key>
+		<string>https://go.skype.com/mac.download</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+    <string>apps/Microsoft/skype</string>
+		<key>NAME</key>
+		<string>Skype</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Calling, seeing, messaging and sharing with others – wherever they are.</string>
+			<key>display_name</key>
+			<string>Skype</string>
+			<key>developer</key>
+			<string>Microsoft</string>
+			<key>category</key>
+			<string>Communication</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.autopkg.munki.Skype</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.autopkg.download.Skype</key>
+			<dict>
+				<key>git_hash</key>
+				<string>d90de42ea54f8aee351d71f4ad694735285f2679</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/Skype/Skype.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>76dfdf1d0d3b011df75a58e41c4e190156cd6be119176d5bf9d4e57f83bf6b2a</string>
+			</dict>
+			<key>com.github.autopkg.munki.Skype</key>
+			<dict>
+				<key>git_hash</key>
+				<string>cb1ffba34aeafc5c96bdca9c15da65b957c50e2e</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/Skype/Skype.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>52de6e60a95e3744a56a9c50f6e84c70ab699006e473a621cd2f3d6b57672022</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

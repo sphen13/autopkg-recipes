@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.TextMate2</string>
+	<key>Input</key>
+	<dict>
+		<key>BASE_URL</key>
+		<string>https://api.textmate.org/downloads</string>
+		<key>BRANCH</key>
+		<string>release</string>
+		<key>FILENAME</key>
+		<string>TextMate_2.0.tbz</string>
+		<key>MACOS</key>
+		<string>10.15</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/TextMate2</string>
+		<key>NAME</key>
+		<string>TextMate2</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>TextMate brings Apple's approach to operating systems into the world of text editors. By bridging UNIX underpinnings and GUI, TextMate cherry-picks the best of both worlds to the benefit of expert scripters and novice users alike.</string>
+			<key>display_name</key>
+			<string>TextMate</string>
+      <key>category</key>
+			<string>Developer Tools</string>
+			<key>minimum_os_version</key>
+			<string>10.12</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>postinstall_script</key>
+			<string>#!/bin/sh
+[ -d /usr/local/bin ] || mkdir -p /usr/local/bin
+/bin/cp -f -p /Applications/TextMate.app/Contents/Resources/mate /usr/local/bin/mate
+</string>
+			<key>postuninstall_script</key>
+			<string>#!/bin/sh
+[ -e /usr/local/bin/mate ] &amp;&amp; rm -f /usr/local/bin/mate
+</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.autopkg.munki.TextMate2</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.autopkg.download.TextMate2</key>
+			<dict>
+				<key>git_hash</key>
+				<string>cc07e7d9f8ce3e7e30f8c36169193b8d3f27bf28</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/TextMate/TextMate2.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>a008dce830a1095ec2abd8b588ac6496a1b724750312a70e3548d31bc1bfa639</string>
+			</dict>
+			<key>com.github.autopkg.munki.TextMate2</key>
+			<dict>
+				<key>git_hash</key>
+				<string>cc07e7d9f8ce3e7e30f8c36169193b8d3f27bf28</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/TextMate/TextMate2.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>52f5b67936a06cdb9253bb770fcab8ef3856d30c79315b49e3a627b956d2d5f5</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

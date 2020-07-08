@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.docklib</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>tools/docklib</string>
+		<key>NAME</key>
+		<string>docklib</string>
+		<key>pathname</key>
+		<string>%pathname%</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>A Python module that provides methods for manipulating the macOS Dock.</string>
+			<key>developer</key>
+			<string>Elliot Jordan</string>
+			<key>display_name</key>
+			<string>docklib</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.homebysix.munki.docklib</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.homebysix.download.docklib</key>
+			<dict>
+				<key>git_hash</key>
+				<string>660b242b451fa4bff6e7ff95ab82dbd6303f822c</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Elliot Jordan/docklib.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>e44141292880e8a10558984862dd3c9725b8c6ab835d1398ad2a8238b4165440</string>
+			</dict>
+			<key>com.github.homebysix.munki.docklib</key>
+			<dict>
+				<key>git_hash</key>
+				<string>660b242b451fa4bff6e7ff95ab82dbd6303f822c</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Elliot Jordan/docklib.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>ad2b74a82007bef0653a5fc368831b62e7066d15b7c93a97f868302a9ecada16</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

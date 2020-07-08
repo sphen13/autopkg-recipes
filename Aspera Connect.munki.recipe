@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Aspera Connect</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>Aspera Connect</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Push the limits of maximum-speed transfers. Aspera Connect helps you securely move files and folders of any size.</string>
+			<key>developer</key>
+			<string>IBM Corp</string>
+			<key>display_name</key>
+			<string>Aspera Connect</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+			<key>unattended_uninstall</key>
+			<true/>
+			<key>category</key>
+			<string>File Sharing</string>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.dataJAR-recipes.munki.Aspera Connect</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.dataJAR-recipes.download.Aspera Connect</key>
+			<dict>
+				<key>git_hash</key>
+				<string>710dd159f929eedfc1aa56bc9e456795d5ae386f</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/Aspera Connect/Aspera Connect.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>0ab8bac9e73931ede97fa0e4258b3a161880cc6818f9e936df511bd6bd8f5410</string>
+			</dict>
+			<key>com.github.dataJAR-recipes.munki.Aspera Connect</key>
+			<dict>
+				<key>git_hash</key>
+				<string>d7601a40a510bd198fff968bd69fdfe9f8b7561b</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/Aspera Connect/Aspera Connect.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>4bfdf49b87e6629c0e7c0e4fab457304398db81297bdd14208216a3912f90518</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

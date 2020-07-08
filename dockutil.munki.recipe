@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.dockutil</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_CATEGORY</key>
+    <string>Admin Utilities</string>
+		<key>MUNKI_DEVELOPER</key>
+		<string>Kyle Crawford</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>tools</string>
+		<key>NAME</key>
+		<string>dockutil</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>%MUNKI_CATEGORY%</string>
+			<key>description</key>
+			<string>command line tool for managing dock items</string>
+			<key>developer</key>
+			<string>%MUNKI_DEVELOPER%</string>
+			<key>minimum_os_version</key>
+			<string>10.9</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.jessepeterson.munki.dockutil</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.autopkg.jessepeterson.download.dockutil</key>
+			<dict>
+				<key>git_hash</key>
+				<string>09a528e3aabe2c236432b259ca0d3a2524a53eac</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.jessepeterson-recipes/dockutil/dockutil.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>d913fa911ebfa53c976f07af29a9b59255818338ad670de11aa8399e960e639b</string>
+			</dict>
+			<key>com.github.jessepeterson.munki.dockutil</key>
+			<dict>
+				<key>git_hash</key>
+				<string>7b449efaabb785a55e5fc0f5705d9734611492b4</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.jessepeterson-recipes/dockutil/dockutil.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>ae2a0b4e246c488a69104127b73efe3417ba7203f038210ae4ee1ce12a577a94</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

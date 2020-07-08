@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Transmit5</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/panic</string>
+		<key>NAME</key>
+		<string>Transmit5</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Transmit is an excellent FTP (file transfer protocol), SFTP, S3 (Amazon.com file hosting) and iDisk/WebDAV client that allows you to upload, download, and delete files over the internet. With the most Mac-like interface available, Transmit makes FTP as simple, fun, and easy as it can possibly be.</string>
+			<key>display_name</key>
+			<string>Transmit 5</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+      <key>developer</key>
+			<string>Panic Inc.</string>
+      <key>category</key>
+      <string>File Sharing</string>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.autopkg.munki.transmit5</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.autopkg.download.transmit5</key>
+			<dict>
+				<key>git_hash</key>
+				<string>b6d692209043131ba91313aa8406c0c4096b7da1</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/Panic/Transmit5.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>75a787847f4bcbb974c6d71c37046d5d0dfb7c2ed35b2d6923032a6b8e0e0a8d</string>
+			</dict>
+			<key>com.github.autopkg.munki.transmit5</key>
+			<dict>
+				<key>git_hash</key>
+				<string>b6d692209043131ba91313aa8406c0c4096b7da1</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/Panic/Transmit5.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>7e2f2af84e9255798a57f1fea9c4b64f29917bbcb557ccc1e8038ded608540de</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

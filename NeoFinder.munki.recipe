@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.NeoFinder</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>NeoFinder</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Catalog your external media and disks (was CDFinder).</string>
+			<key>developer</key>
+			<string>NORBERT M. DOERNER</string>
+			<key>display_name</key>
+			<string>NeoFinder</string>
+			<key>category</key>
+			<string>Utilities</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.homebysix.munki.NeoFinder</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.homebysix.download.NeoFinder</key>
+			<dict>
+				<key>git_hash</key>
+				<string>78deed314f393445132ba075ee4bdff2c07d8fe2</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/NeoFinder/NeoFinder.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>147666d42c93a1c5a7d5f09c182347081d55d9e0cdd53e97712e0b2bba7d04a7</string>
+			</dict>
+			<key>com.github.homebysix.munki.NeoFinder</key>
+			<dict>
+				<key>git_hash</key>
+				<string>64f7ed04f9e7692a92b94d291c3b90ea7d530265</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/NeoFinder/NeoFinder.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>b7eee38b1a50c7911630a9b819881237acc6e8b0e7b52afbee1714e983dae0cb</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

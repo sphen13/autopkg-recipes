@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.EditReady</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>EditReady</string>
+		<key>SPARKLE_FEED_URL</key>
+		<string>https://www.divergentmedia.com/autoupdater/editready/1_x</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Simple and fast transcode for various media formats.</string>
+			<key>developer</key>
+			<string>Divergent Media</string>
+			<key>display_name</key>
+			<string>EditReady</string>
+			<key>category</key>
+			<string>Video</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>uk.ac.ox.orchard.munki.EditReady</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>uk.ac.ox.orchard.download.EditReady</key>
+			<dict>
+				<key>git_hash</key>
+				<string>568e8e50f5402046113d6231db9a98099c116f6d</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.orchard-recipes/DivergentMedia/EditReady.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>39b757efd2810ade3f8ba7ebd290c2d8acb8a1e6d3ae5a6508caac4621f4cd12</string>
+			</dict>
+			<key>uk.ac.ox.orchard.munki.EditReady</key>
+			<dict>
+				<key>git_hash</key>
+				<string>4b24ea2ae197099ca271b48e60ddcf0fd7c0cab7</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.orchard-recipes/DivergentMedia/EditReady.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>9b9c89147fa80439be3d05b7dcbc524cb9a2044618e021f174d65663aa5dacdc</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

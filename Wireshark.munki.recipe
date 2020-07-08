@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Wireshark</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>Wireshark</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>Network Utilities</string>
+			<key>description</key>
+			<string>Wireshark is a powerful network protocol analysis suite.</string>
+			<key>developer</key>
+			<string>Wireshark Foundation</string>
+			<key>minimum_os_version</key>
+			<string>10.12.0</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>postinstall_script</key>
+			<string>#!/bin/bash
+if [ -d "/Applications/Wireshark.app" ]; then
+	# Add directory traversal for the entire application and ensure
+	# all executables are executable by group and other
+	/bin/chmod -R u=rwX,go=rX /Applications/Wireshark.app
+fi
+			</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.jleggat.Wireshark.munki</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.jleggat.Wireshark.download</key>
+			<dict>
+				<key>git_hash</key>
+				<string>efda41cdc0901477f4cfd8a5d6a47ec6c9647e3a</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.jleggat-recipes/Wireshark/Wireshark.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>e6d4985331ed6cb404cb251c8d8ac275868cad7c80c86a1afca2f3b496c7087e</string>
+			</dict>
+			<key>com.github.jleggat.Wireshark.munki</key>
+			<dict>
+				<key>git_hash</key>
+				<string>fd9f2cf85042656b7ffd451b87259ce93f16a31d</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.jleggat-recipes/Wireshark/Wireshark.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>344b1e61d815e5471aca88cce7adb63f7244d2b7487aa65728162c9dbeff5d3c</string>
+			</dict>
+			<key>com.github.jleggat.pkg.Wireshark</key>
+			<dict>
+				<key>git_hash</key>
+				<string>4c8d72a0b28ad25e0ed0e313bba1055e2859541d</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.jleggat-recipes/Wireshark/Wireshark.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>748e904254b96b6a7313efc06bde987e7f6b3954f557c0ca577dc38c34c91342</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

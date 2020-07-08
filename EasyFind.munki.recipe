@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.EasyFind</string>
+	<key>Input</key>
+	<dict>
+		<key>APP_DESTINATION</key>
+		<string>/Applications</string>
+		<key>DOWNLOAD_URL</key>
+		<string>https://www.devontechnologies.com/apps/freeware</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/EasyFind</string>
+		<key>NAME</key>
+		<string>EasyFind</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>Utilities</string>
+			<key>description</key>
+			<string>EasyFind finds files and folders by name or content using advanced Boolean operators.</string>
+			<key>developer</key>
+			<string>DEVONtechnologies</string>
+			<key>display_name</key>
+			<string>EasyFind</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.jleggat.EasyFind.munki</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.jleggat.EasyFind.download</key>
+			<dict>
+				<key>git_hash</key>
+				<string>d81e1030543c8e25328af8ccd4321852bb4cedb5</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.jleggat-recipes/EasyFind/EasyFind.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>b699ea4f057511affd628f14e6872511f6a833e4e3e45af3c38fd51027484d43</string>
+			</dict>
+			<key>com.github.jleggat.EasyFind.munki</key>
+			<dict>
+				<key>git_hash</key>
+				<string>d9c068e0f5c739d5834edafc7ab93947e7605eb3</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.jleggat-recipes/EasyFind/EasyFind.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>c241a568b3c0a426c0be1fed0631ca8381965fbf72e33e5e2e3de546c5b33b80</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

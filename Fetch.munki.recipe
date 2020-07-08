@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Fetch</string>
+	<key>Input</key>
+	<dict>
+		<key>APP_DESTINATION</key>
+		<string>/Applications</string>
+		<key>BUNDLEID</key>
+		<string>com.fetchsoftworks.Fetch</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/Fetch</string>
+		<key>NAME</key>
+		<string>Fetch</string>
+		<key>REGISTRANTNAME</key>
+		<string></string>
+		<key>SEARCH_PATTERN</key>
+		<string>(?P&lt;url&gt;fetch/download/Fetch_(?P&lt;version&gt;[0-9.]+)\.zip)</string>
+		<key>SEARCH_URL</key>
+		<string>https://fetchsoftworks.com</string>
+		<key>SERIALNUMBER</key>
+		<string></string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>File Sharing</string>
+			<key>description</key>
+			<string>Fetch is a full-featured FTP, SFTP and FTPS (FTP with TLS/SSL) client with a simple and easy-to-use interface.</string>
+			<key>developer</key>
+			<string>Fetch Softworks</string>
+			<key>display_name</key>
+			<string>Fetch - Full featured file transfer client</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.jleggat.Fetch.munki</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict>
+			<key>FetchScriptsPath</key>
+			<dict>
+				<key>git_hash</key>
+				<string>d947a99fa91d224deb81569d8c3fcd98caf15a3a</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.jleggat-recipes/Fetch/FetchScriptsPath.py</string>
+				<key>sha256_hash</key>
+				<string>7475530ef05497be04e893546a1a43f6b0c6096c186ee33881d4930e26fc8979</string>
+			</dict>
+		</dict>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.jleggat.Fetch.munki</key>
+			<dict>
+				<key>git_hash</key>
+				<string>d3b8b4bfccc31fd7fedebaf8de6f7046d1542646</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.jleggat-recipes/Fetch/Fetch.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>fc663450cc30b1eecbdfc17084517080b37c6a6cfe2f5e8f691edc837c423327</string>
+			</dict>
+			<key>com.github.jleggat.download.Fetch</key>
+			<dict>
+				<key>git_hash</key>
+				<string>c7c01a7311868e3ab2fd6f21b8721d38de13e88a</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.jleggat-recipes/Fetch/Fetch.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>12d5566666dca446c7ef0ecb5608283e5e897be6bf5c11d33fe443c69e69b3c2</string>
+			</dict>
+			<key>com.github.jleggat.pkg.Fetch</key>
+			<dict>
+				<key>git_hash</key>
+				<string>c7c01a7311868e3ab2fd6f21b8721d38de13e88a</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.jleggat-recipes/Fetch/Fetch.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>b9c94a670aeed3471d49a50b8c8e2c72c67b2d5cad19eed7e43b8eb4602b769f</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>
