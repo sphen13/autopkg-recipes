@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Suitcase Fusion 21</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/Extensis/Suitcase</string>
+		<key>NAME</key>
+		<string>SuitcaseFusion21</string>
+		<key>SPARKLE_FEED_URL</key>
+		<string>https://sparkle.extensis.com/u/ST/EN/suitcase21en.xml</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>Productivity</string>
+			<key>description</key>
+			<string>Manage all of your fonts from one source, no matter how many you have—including your system fonts, purchased fonts, fonts synced from Adobe Typekit, Google Fonts, and more. Turn them on and off as you need. Suitcase Fusion offers you the best way to organize, find, view, and use them within your existing workflow.</string>
+			<key>developer</key>
+			<string>Extensis</string>
+			<key>display_name</key>
+			<string>Suitcase Fusion 21</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.dataJAR-recipes.munki.Suitcase Fusion 21</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.dataJAR-recipes.download.Suitcase Fusion 21</key>
+			<dict>
+				<key>git_hash</key>
+				<string>a475eec8f375d3e512ee056b000471d7cb2afdbc</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/Suitcase Fusion 21/Suitcase Fusion 21.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>a51f5ff1b36e0940b7065176593e8230f679f86504d42e1e9d2ddf837761fac2</string>
+			</dict>
+			<key>com.github.dataJAR-recipes.munki.Suitcase Fusion 21</key>
+			<dict>
+				<key>git_hash</key>
+				<string>a475eec8f375d3e512ee056b000471d7cb2afdbc</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/Suitcase Fusion 21/Suitcase Fusion 21.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>0f01f98bc30be4374422664af28ec947818c70450010f14206ff18528d7bfe5f</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

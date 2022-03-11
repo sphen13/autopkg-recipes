@@ -18,14 +18,14 @@
 			<array>
 				<string>testing</string>
 			</array>
+			<key>category</key>
+			<string>Developer Tools</string>
 			<key>description</key>
 			<string>Desktop app made by GitHub for seamless contribution to git projects.</string>
 			<key>developer</key>
 			<string>GitHub, Inc.</string>
 			<key>display_name</key>
 			<string>GitHub Desktop</string>
-      <key>category</key>
-			<string>Developer Tools</string>
 			<key>name</key>
 			<string>%NAME%</string>
 			<key>postinstall_script</key>
@@ -68,11 +68,11 @@ exit 0
 			<key>com.github.homebysix.download.GitHubDesktop</key>
 			<dict>
 				<key>git_hash</key>
-				<string>ce0f2c7545cf82e7911cc154c5815fba794f8faf</string>
+				<string>929f09a8dc248349e9ce35f7d519c253298317d1</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/GitHub/GitHubDesktop.download.recipe</string>
 				<key>sha256_hash</key>
-				<string>58533c854036c09890c73f5dfca7a4395ae7bd7231d997f5ed8525c229d44e4f</string>
+				<string>ddd466175cff624508787263a470f89b7c2dcc517e1d5cc381f59ec06c846012</string>
 			</dict>
 			<key>com.github.homebysix.munki.GitHubDesktop</key>
 			<dict>

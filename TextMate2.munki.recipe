@@ -24,12 +24,12 @@
 			<array>
 				<string>testing</string>
 			</array>
+			<key>category</key>
+			<string>Developer Tools</string>
 			<key>description</key>
 			<string>TextMate brings Apple's approach to operating systems into the world of text editors. By bridging UNIX underpinnings and GUI, TextMate cherry-picks the best of both worlds to the benefit of expert scripters and novice users alike.</string>
 			<key>display_name</key>
 			<string>TextMate</string>
-      <key>category</key>
-			<string>Developer Tools</string>
 			<key>minimum_os_version</key>
 			<string>10.12</string>
 			<key>name</key>
@@ -58,20 +58,20 @@
 			<key>com.github.autopkg.download.TextMate2</key>
 			<dict>
 				<key>git_hash</key>
-				<string>cc07e7d9f8ce3e7e30f8c36169193b8d3f27bf28</string>
+				<string>98f630b7d95121fe3db0f7b432cf58d0d34716c1</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/TextMate/TextMate2.download.recipe</string>
 				<key>sha256_hash</key>
-				<string>a008dce830a1095ec2abd8b588ac6496a1b724750312a70e3548d31bc1bfa639</string>
+				<string>0b3921208c88504de6b0698be259b93c1f55d263096fd54c8629d9940a1427f5</string>
 			</dict>
 			<key>com.github.autopkg.munki.TextMate2</key>
 			<dict>
 				<key>git_hash</key>
-				<string>cc07e7d9f8ce3e7e30f8c36169193b8d3f27bf28</string>
+				<string>1447f8f509e787b2dc6c58132038c598515f8d47</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/TextMate/TextMate2.munki.recipe</string>
 				<key>sha256_hash</key>
-				<string>52f5b67936a06cdb9253bb770fcab8ef3856d30c79315b49e3a627b956d2d5f5</string>
+				<string>3a1f334d8c2f4cc1a4c01eab5dca196121daa2a2fb66c2b72f806e9019254801</string>
 			</dict>
 		</dict>
 	</dict>

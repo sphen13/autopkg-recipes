@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.WorkSpaces</string>
+	<key>Input</key>
+	<dict>
+		<key>DISPLAY_NAME</key>
+		<string>Amazon WorkSpaces</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/Amazon</string>
+		<key>NAME</key>
+		<string>AmazonWorkSpaces</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>blocking_applications</key>
+			<array>
+				<string>WorkSpaces</string>
+			</array>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Amazon WorkSpaces is a fully managed, secure Desktop-as-a-Service (DaaS) solution which runs on AWS. With Amazon WorkSpaces, you can easily provision virtual, cloud-based Microsoft Windows desktops for your users, providing them access to the documents, applications, and resources they need, anywhere, anytime, from any supported device.</string>
+			<key>display_name</key>
+			<string>%DISPLAY_NAME%</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+			<key>unattended_uninstall</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.jlehikoinen.munki.AmazonWorkSpaces</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.jlehikoinen.download.AmazonWorkSpaces</key>
+			<dict>
+				<key>git_hash</key>
+				<string>4db9710916eea4aff6b03aec0d0004ece7fd600b</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.jlehikoinen-recipes/WorkSpaces/WorkSpaces.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>b67696392a7e66709ed0c3637210de1448a1648d3d2d54e890204d99759be931</string>
+			</dict>
+			<key>com.github.jlehikoinen.munki.AmazonWorkSpaces</key>
+			<dict>
+				<key>git_hash</key>
+				<string>fa447bb6e454f2e31e89067c256a4f1da7c55430</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.jlehikoinen-recipes/WorkSpaces/WorkSpaces.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>8c1219dfa2242b744f94a852d1078a5fc9c73ec74b68a6dfcae23bd6b3009433</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

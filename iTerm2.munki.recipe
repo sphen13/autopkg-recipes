@@ -18,18 +18,18 @@
 			<array>
 				<string>testing</string>
 			</array>
+			<key>category</key>
+			<string>Utilities</string>
 			<key>description</key>
 			<string>Powerful alternative to Terminal.app.</string>
+			<key>developer</key>
+			<string>George Nachman</string>
 			<key>display_name</key>
 			<string>iTerm2</string>
 			<key>name</key>
 			<string>%NAME%</string>
 			<key>unattended_install</key>
 			<true/>
-      <key>developer</key>
-      <string>George Nachman</string>
-			<key>category</key>
-			<string>Utilities</string>
 		</dict>
 	</dict>
 	<key>ParentRecipe</key>
@@ -43,11 +43,11 @@
 			<key>com.github.keeleysam.autopkg.download.iTerm2</key>
 			<dict>
 				<key>git_hash</key>
-				<string>4f972fb30fa6c89fcbebaf54036875eab34f4ddb</string>
+				<string>9d973ff8f9de1ec35c95beaeb93883e3e00fac46</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.keeleysam-recipes/iTerm2/iTerm2.download.recipe</string>
 				<key>sha256_hash</key>
-				<string>0f681284b98dd957e1c6b052a745647aee05ee7ade08530d0c6cdc62d8732a81</string>
+				<string>1705c6bf36d005024b2595d2b77268c105ae4a51ee9d736ecbaafedc2771eb9b</string>
 			</dict>
 			<key>com.github.keeleysam.autopkg.munki.iTerm2</key>
 			<dict>

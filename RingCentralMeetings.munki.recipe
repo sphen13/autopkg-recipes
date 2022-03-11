@@ -66,6 +66,8 @@
 			</dict>
 			<key>com.github.homebysix.pkg.RingCentralMeetings</key>
 			<dict>
+				<key>git_hash</key>
+				<string>4b31ebfeff8a1195f62a4f2a708a45403c9411cf</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/RingCentral/RingCentralMeetings.pkg.recipe</string>
 				<key>sha256_hash</key>

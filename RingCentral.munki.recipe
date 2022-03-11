@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.RingCentral</string>
+	<key>Input</key>
+	<dict>
+		<key>DOWNLOAD_URL</key>
+		<string>https://app.ringcentral.com/download/RingCentral.pkg</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/ringcentral</string>
+		<key>NAME</key>
+		<string>RingCentral</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>blocking_applications</key>
+			<array>
+				<string>RingCentral</string>
+			</array>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>Communication</string>
+			<key>description</key>
+			<string>Everything you need in one beautiful app; Team messaging, video meetings, and a business phone-reimagined so you can do more from anywhere.</string>
+			<key>display_name</key>
+			<string>RingCentral</string>
+			<key>minimum_os_version</key>
+			<string>10.10.0</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.bradclare.munki.ringcentral</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.bradclare.download.ringcentral</key>
+			<dict>
+				<key>git_hash</key>
+				<string>d3f5a873d546bec034346d27a410e927dfde5b7e</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.bradclare-recipes/RingCentral/RingCentral.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>25093f32e5086efd6e092b3a832f18af056f905fc9ba3a62ff3e8d09bea9d2a1</string>
+			</dict>
+			<key>com.github.bradclare.munki.ringcentral</key>
+			<dict>
+				<key>git_hash</key>
+				<string>fa4f72c1fa08c9241b7ba4ec8bcbe218398f5321</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.bradclare-recipes/RingCentral/RingCentral.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>59c70815a429233a01f4fa5792d9898dfb4630f9d7a17e4f102a966f65d1a83a</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

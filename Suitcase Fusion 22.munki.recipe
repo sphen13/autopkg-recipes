@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Suitcase Fusion 22</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/Extensis/Suitcase</string>
+		<key>NAME</key>
+		<string>SuitcaseFusion22</string>
+		<key>SPARKLE_FEED_URL</key>
+		<string>https://sparkle.extensis.com/u/ST/EN/suitcase22en.xml</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>Productivity</string>
+			<key>description</key>
+			<string>You love fonts. But wrangling your font collection? Not so much. Welcome to Suitcase Fusion, the gold standard in font management for creative professionals.</string>
+			<key>developer</key>
+			<string>Extensis</string>
+			<key>display_name</key>
+			<string>Suitcase Fusion 22</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>postinstall_script</key>
+			<string>#!/bin/bash
+#
+# If Suitcase Fusion is installed, install it's plugins
+#
+
+pluginInstaller="/Applications/Suitcase Fusion.app/Contents/Resources/plugin-installer"
+
+if [ -f "${pluginInstaller}" ]
+then
+    /bin/echo "Found ${pluginInstaller}, running..."
+    "${pluginInstaller}" --install-all &gt; /dev/null 2&gt;&amp;1
+fi</string>
+			<key>unattended_install</key>
+			<true/>
+			<key>unattended_uninstall</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.dataJAR-recipes.munki.Suitcase Fusion 22</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.dataJAR-recipes.download.Suitcase Fusion 22</key>
+			<dict>
+				<key>git_hash</key>
+				<string>9f01c492f08c00c4e69a3a23ea7cf758a97d3a8d</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/Suitcase Fusion 22/Suitcase Fusion 22.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>0aa85bef488a9369f149224b5b2e3af4e4266772311bb3092a82130be222d6cc</string>
+			</dict>
+			<key>com.github.dataJAR-recipes.munki.Suitcase Fusion 22</key>
+			<dict>
+				<key>git_hash</key>
+				<string>9f01c492f08c00c4e69a3a23ea7cf758a97d3a8d</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/Suitcase Fusion 22/Suitcase Fusion 22.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>30a65e39e583a47c5d44c54e7f90c67fafc04a9da686b24b1379cef901a9bbbf</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

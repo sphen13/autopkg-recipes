@@ -18,12 +18,12 @@
 			<array>
 				<string>testing</string>
 			</array>
+			<key>category</key>
+			<string>Utilities</string>
 			<key>description</key>
 			<string>Advanced file-search tool.</string>
 			<key>developer</key>
 			<string>Houdah Software s.a r.l.</string>
-			<key>category</key>
-			<string>Utilities</string>
 			<key>display_name</key>
 			<string>HoudahSpot</string>
 			<key>name</key>
@@ -43,11 +43,11 @@
 			<key>com.github.homebysix.download.HoudahSpot</key>
 			<dict>
 				<key>git_hash</key>
-				<string>8a011dfd74579a361268b4c6d5cd07e7e9166b9c</string>
+				<string>8dd40d5df5fae307764e5747b405521043a15878</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Houdah/HoudahSpot.download.recipe</string>
 				<key>sha256_hash</key>
-				<string>a84d7a90d4d06b32c0b9f46162e44a3dbca59423b3ab9233588d2525cba5afff</string>
+				<string>b75bcf02dc813a9c6a49de97edaa68ef67ee7f95e66a47e823203c277edd7301</string>
 			</dict>
 			<key>com.github.homebysix.munki.HoudahSpot</key>
 			<dict>

@@ -16,6 +16,8 @@
 			<array>
 				<string>testing</string>
 			</array>
+			<key>category</key>
+			<string>File Sharing</string>
 			<key>description</key>
 			<string>Push the limits of maximum-speed transfers. Aspera Connect helps you securely move files and folders of any size.</string>
 			<key>developer</key>
@@ -28,8 +30,6 @@
 			<true/>
 			<key>unattended_uninstall</key>
 			<true/>
-			<key>category</key>
-			<string>File Sharing</string>
 		</dict>
 	</dict>
 	<key>ParentRecipe</key>
@@ -43,20 +43,20 @@
 			<key>com.github.dataJAR-recipes.download.Aspera Connect</key>
 			<dict>
 				<key>git_hash</key>
-				<string>710dd159f929eedfc1aa56bc9e456795d5ae386f</string>
+				<string>afe57214899fa67d181abe1f15f74470b84b0abd</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/Aspera Connect/Aspera Connect.download.recipe</string>
 				<key>sha256_hash</key>
-				<string>0ab8bac9e73931ede97fa0e4258b3a161880cc6818f9e936df511bd6bd8f5410</string>
+				<string>4a034687e424eb45b9def054354750fad8fd95406176d567a343dbe1409ea80c</string>
 			</dict>
 			<key>com.github.dataJAR-recipes.munki.Aspera Connect</key>
 			<dict>
 				<key>git_hash</key>
-				<string>d7601a40a510bd198fff968bd69fdfe9f8b7561b</string>
+				<string>afe57214899fa67d181abe1f15f74470b84b0abd</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/Aspera Connect/Aspera Connect.munki.recipe</string>
 				<key>sha256_hash</key>
-				<string>4bfdf49b87e6629c0e7c0e4fab457304398db81297bdd14208216a3912f90518</string>
+				<string>875d84f85a7f23e4e88a2cd45dcda79f14d000b6d5015ea5792fbef47de5faf5</string>
 			</dict>
 		</dict>
 	</dict>

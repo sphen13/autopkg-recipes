@@ -24,10 +24,6 @@
 			<string>VLC Media Player</string>
 			<key>name</key>
 			<string>%NAME%</string>
-			<key>supported_architectures</key>
-			<array>
-				<string>x86_64</string>
-			</array>
 			<key>unattended_install</key>
 			<true/>
 		</dict>
@@ -43,20 +39,20 @@
 			<key>com.github.autopkg.download.VLC</key>
 			<dict>
 				<key>git_hash</key>
-				<string>72aaf497ded4fd743905da2a5383a0a990067d39</string>
+				<string>1b4ba2cfe6d1f6de304bc9c29b57df6602b2e7e6</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/VLC/VLC.download.recipe</string>
 				<key>sha256_hash</key>
-				<string>726256d1486e993b9ce49f292be6b3ffe14a51a3a2bb31d8a7c2e355428a1ad4</string>
+				<string>e74a96c65488d34aabb247c171b57db7fed8afd67b61fffdce8f46bc54d35f18</string>
 			</dict>
 			<key>com.github.autopkg.munki.VLC</key>
 			<dict>
 				<key>git_hash</key>
-				<string>37fe16ce9cc765bddba74fb6abc474b6e1eeaa83</string>
+				<string>1b4ba2cfe6d1f6de304bc9c29b57df6602b2e7e6</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/VLC/VLC.munki.recipe</string>
 				<key>sha256_hash</key>
-				<string>ba51394e291074d2a4bb89d7138705e6824a4268f1ca18949e27de59cb491508</string>
+				<string>183c9ec4e92d0fd572dacf7bec79b8e3c2c4c93b5dd064e8e2335fa2a43d2922</string>
 			</dict>
 		</dict>
 	</dict>

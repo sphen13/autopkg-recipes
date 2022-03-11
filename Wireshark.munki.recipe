@@ -58,11 +58,11 @@ fi
 			<key>com.github.jleggat.Wireshark.munki</key>
 			<dict>
 				<key>git_hash</key>
-				<string>fd9f2cf85042656b7ffd451b87259ce93f16a31d</string>
+				<string>bdc719b99c28f973493063adcf6df464f9874121</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.jleggat-recipes/Wireshark/Wireshark.munki.recipe</string>
 				<key>sha256_hash</key>
-				<string>344b1e61d815e5471aca88cce7adb63f7244d2b7487aa65728162c9dbeff5d3c</string>
+				<string>939ea2ef4e4b5acfb86701475d2246806e409b7e7ce1fcb484bbfb2aaf034024</string>
 			</dict>
 			<key>com.github.jleggat.pkg.Wireshark</key>
 			<dict>

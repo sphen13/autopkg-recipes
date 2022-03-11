@@ -16,14 +16,14 @@
 			<array>
 				<string>testing</string>
 			</array>
+			<key>category</key>
+			<string>Utilities</string>
 			<key>description</key>
 			<string>Catalog your external media and disks (was CDFinder).</string>
 			<key>developer</key>
 			<string>NORBERT M. DOERNER</string>
 			<key>display_name</key>
 			<string>NeoFinder</string>
-			<key>category</key>
-			<string>Utilities</string>
 			<key>name</key>
 			<string>%NAME%</string>
 			<key>unattended_install</key>
@@ -41,11 +41,11 @@
 			<key>com.github.homebysix.download.NeoFinder</key>
 			<dict>
 				<key>git_hash</key>
-				<string>78deed314f393445132ba075ee4bdff2c07d8fe2</string>
+				<string>9d7dd548659f3979042e959e01930f162dd8dee3</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/NeoFinder/NeoFinder.download.recipe</string>
 				<key>sha256_hash</key>
-				<string>147666d42c93a1c5a7d5f09c182347081d55d9e0cdd53e97712e0b2bba7d04a7</string>
+				<string>c79c494d65e7b3bfa69b03659d247ecdc072cf04ca770ee9bc94ff777fe372f8</string>
 			</dict>
 			<key>com.github.homebysix.munki.NeoFinder</key>
 			<dict>

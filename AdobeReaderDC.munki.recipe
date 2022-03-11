@@ -28,8 +28,12 @@
 			<array>
 				<string>testing</string>
 			</array>
+			<key>category</key>
+			<string>Productivity</string>
 			<key>description</key>
 			<string>More powerful than other PDF software, Adobe Acrobat Reader DC is the free, trusted standard for viewing, printing, and annotating PDFs. And now, it’s connected to Adobe Document Cloud — so it’s easier than ever to work with PDFs on computers and mobile devices.</string>
+			<key>developer</key>
+			<string>Adobe</string>
 			<key>display_name</key>
 			<string>Adobe Acrobat Reader DC</string>
 			<key>minimum_os_version</key>
@@ -45,10 +49,6 @@ exit 0
             </string>
 			<key>unattended_install</key>
 			<true/>
-			<key>developer</key>
-			<string>Adobe</string>
-			<key>category</key>
-			<string>Productivity</string>
 		</dict>
 	</dict>
 	<key>ParentRecipe</key>
@@ -60,11 +60,11 @@ exit 0
 			<key>AdobeReaderURLProvider</key>
 			<dict>
 				<key>git_hash</key>
-				<string>437e573e281a4bd4ceb40ee569fc3e3dd441d0ba</string>
+				<string>e59fe2695de28cbacc77d8ec23f68fee24e1b135</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/AdobeReader/AdobeReaderURLProvider.py</string>
 				<key>sha256_hash</key>
-				<string>c2fa5d078493c52e8fe34e8f899ed0590421fffa2d0bbe91a1b6b4f07bbe4498</string>
+				<string>647d2b53c5950cc94c30cfa9a3c4061e5663661193fb117125a6edcec7796e7c</string>
 			</dict>
 		</dict>
 		<key>parent_recipes</key>
@@ -72,11 +72,11 @@ exit 0
 			<key>com.github.autopkg.download.AdobeReaderDC</key>
 			<dict>
 				<key>git_hash</key>
-				<string>55e47128864841e568cf20ccd2b852fea48faa50</string>
+				<string>cd4c7a76dc2040ecc1a7c08c4a56ba849f71cfb7</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/AdobeReader/AdobeReaderDC.download.recipe</string>
 				<key>sha256_hash</key>
-				<string>755139a0e0479cd7ae56771ca60ee443562f0f5636f46de05a03a68be07b3daa</string>
+				<string>5d540d866069d66e67ef11a825f9feaff8500e6c45aa520393e542ab546e3843</string>
 			</dict>
 			<key>com.github.autopkg.munki.AdobeReaderDC</key>
 			<dict>

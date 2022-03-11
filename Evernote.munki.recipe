@@ -18,6 +18,8 @@
 			<array>
 				<string>testing</string>
 			</array>
+			<key>category</key>
+			<string>Productivity</string>
 			<key>description</key>
 			<string>Evernote makes it easy to remember things big and small from your everyday life using your computer, phone, tablet and the web.</string>
 			<key>display_name</key>
@@ -26,8 +28,6 @@
 			<string>%NAME%</string>
 			<key>unattended_install</key>
 			<true/>
-      <key>category</key>
-			<string>Productivity</string>
 		</dict>
 	</dict>
 	<key>ParentRecipe</key>
@@ -41,20 +41,20 @@
 			<key>com.github.autopkg.download.Evernote</key>
 			<dict>
 				<key>git_hash</key>
-				<string>ebcbf5b5b3e600b329bf15d412217fd5ecbb4ff8</string>
+				<string>52e7c5a76ce386397cebd7bd80d11bcac59cd2cd</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/Evernote/Evernote.download.recipe</string>
 				<key>sha256_hash</key>
-				<string>0a4c58e9f0ff617bcefddf22e6dba8c5d50758ce952a9888264c47094f0dbf76</string>
+				<string>55fc82c29fdb651218dc809fd7b1a3b28c30541256a6cf09ed83b2fc447dc50c</string>
 			</dict>
 			<key>com.github.autopkg.munki.Evernote</key>
 			<dict>
 				<key>git_hash</key>
-				<string>1a63ebc794e5feb519c95e5241e6ed00adcecd20</string>
+				<string>52e7c5a76ce386397cebd7bd80d11bcac59cd2cd</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/Evernote/Evernote.munki.recipe</string>
 				<key>sha256_hash</key>
-				<string>e06b5c074460371eef0a4b796c421474abfd211b05b9bbffb6668759baf441c6</string>
+				<string>61b4c0d3571ae51887ff4e395f1dbf92824c634915bbd2241f07f5ecfc68e109</string>
 			</dict>
 		</dict>
 	</dict>

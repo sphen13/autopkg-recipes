@@ -63,11 +63,11 @@
 			<key>com.github.jleggat.Fetch.munki</key>
 			<dict>
 				<key>git_hash</key>
-				<string>d3b8b4bfccc31fd7fedebaf8de6f7046d1542646</string>
+				<string>08018369e023bdea7d36f5063c4ff89d4ff1c05c</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.jleggat-recipes/Fetch/Fetch.munki.recipe</string>
 				<key>sha256_hash</key>
-				<string>fc663450cc30b1eecbdfc17084517080b37c6a6cfe2f5e8f691edc837c423327</string>
+				<string>ed1d629ddf0882063471bc08234e5d21c2cd184972a73beed36160f82a9ee7dc</string>
 			</dict>
 			<key>com.github.jleggat.download.Fetch</key>
 			<dict>

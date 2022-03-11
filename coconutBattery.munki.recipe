@@ -18,12 +18,12 @@
 			<array>
 				<string>testing</string>
 			</array>
+			<key>category</key>
+			<string>Utilities</string>
 			<key>description</key>
 			<string>Displays info about your laptop battery.</string>
 			<key>developer</key>
 			<string>Christoph Sinai</string>
-      <key>category</key>
-			<string>Utilities</string>
 			<key>display_name</key>
 			<string>coconutBattery</string>
 			<key>name</key>
@@ -43,11 +43,11 @@
 			<key>com.github.homebysix.download.coconutBattery</key>
 			<dict>
 				<key>git_hash</key>
-				<string>2feb78ffce4f48b99041d52da9445bf0b3308b8f</string>
+				<string>9b0234d95b80ae32897d954ef507d569599a6918</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/coconutBattery/coconutBattery.download.recipe</string>
 				<key>sha256_hash</key>
-				<string>247905e8639e3078210a01cae2a0e6ea8fd55f9df3c88b83dd0c60e586e73f59</string>
+				<string>54aa4af7cf13ea1de224bc6a103adec2f23d58ba01e22a93f1afda853b284dc7</string>
 			</dict>
 			<key>com.github.homebysix.munki.coconutBattery</key>
 			<dict>

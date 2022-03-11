@@ -18,8 +18,12 @@
 			<array>
 				<string>testing</string>
 			</array>
+			<key>category</key>
+			<string>Utilities</string>
 			<key>description</key>
 			<string>OmniDiskSweeper shows you the files on your drive, in descending order by size, and letting you decide what to do with them. Delete away, but exercise caution.</string>
+			<key>developer</key>
+			<string>The Omni Group</string>
 			<key>display_name</key>
 			<string>OmniDiskSweeper</string>
 			<key>minimum_os_version</key>
@@ -28,10 +32,6 @@
 			<string>%NAME%</string>
 			<key>unattended_install</key>
 			<true/>
-			<key>developer</key>
-			<string>The Omni Group</string>
-			<key>category</key>
-			<string>Utilities</string>
 		</dict>
 	</dict>
 	<key>ParentRecipe</key>
@@ -45,11 +45,11 @@
 			<key>com.github.autopkg.download.OmniDiskSweeper</key>
 			<dict>
 				<key>git_hash</key>
-				<string>54ea22158535c7f67140d06287e00786a6b734f5</string>
+				<string>50810a57ab2260adfed6d318a2a9db722d8510ee</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/OmniGroup/OmniDiskSweeper.download.recipe</string>
 				<key>sha256_hash</key>
-				<string>1c6c8265087a4fdb170f2caf8f733b672864901ef7d284257eda02814637ae0f</string>
+				<string>22daddb3897fc4e576946b492d62962618d45d281d571d1b0053f14d384401c9</string>
 			</dict>
 			<key>com.github.autopkg.download.omnigroupproduct</key>
 			<dict>

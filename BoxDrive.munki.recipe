@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.BoxDrive</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/box</string>
+		<key>NAME</key>
+		<string>BoxDrive</string>
+		<key>URL</key>
+		<string>https://www.box.com/en-gb/resources/downloads/drive</string>
+		<key>USER_AGENT</key>
+		<string>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/600.8.9 (KHTML, like Gecko) Version/8.0.8 Safari/600.8.9</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array/>
+			<key>category</key>
+			<string>File Sharing</string>
+			<key>description</key>
+			<string>Box Drive is the incredibly simple way to work with all of your files — even billions of files — right from your desktop, taking up very little hard drive space. Open your Windows Explorer or Mac Finder to find every file you need, edit like you would any local file and save it automatically to the cloud. And, keep enterprise-grade security protecting everything you do.</string>
+			<key>developer</key>
+			<string>Box</string>
+			<key>display_name</key>
+			<string>BoxDrive</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.dataJAR-recipes.munki.boxdrive</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict>
+			<key>com.github.dataJAR-recipes.Shared Processors/DistributionPkgInfo</key>
+			<dict>
+				<key>git_hash</key>
+				<string>3a51188fe1caed8041033fc8918085bb6d655efa</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/Shared Processors/DistributionPkgInfo.py</string>
+				<key>sha256_hash</key>
+				<string>b1e2703baf4d0af3fba19170903d3f9d98d750cfb6825d5422700e898eddbeca</string>
+			</dict>
+		</dict>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.dataJAR-recipes.download.boxdrive</key>
+			<dict>
+				<key>git_hash</key>
+				<string>d3b47c5060526e0b0990dd24ea7e04387d08e239</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/BoxDrive/BoxDrive.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>d764ec52860295d5247803e5e1e01d1575d29d247b54312a8c54d0828ff65ba1</string>
+			</dict>
+			<key>com.github.dataJAR-recipes.munki.boxdrive</key>
+			<dict>
+				<key>git_hash</key>
+				<string>648ec4da2eee34bec0a25441ac6d03751ff03be0</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/BoxDrive/BoxDrive.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>33052289cdb15fdd972761e25a11a37b540029967abf72d2a3d10eb0f57d000f</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

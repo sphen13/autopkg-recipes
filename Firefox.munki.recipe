@@ -22,16 +22,16 @@
 			<array>
 				<string>testing</string>
 			</array>
+			<key>category</key>
+			<string>Browsers</string>
 			<key>description</key>
 			<string>Mozilla Firefox is a free and open source web browser.</string>
+			<key>developer</key>
+			<string>Mozilla</string>
 			<key>display_name</key>
 			<string>Mozilla Firefox</string>
 			<key>name</key>
 			<string>%NAME%</string>
-			<key>category</key>
-			<string>Browsers</string>
-			<key>developer</key>
-			<string>Mozilla</string>
 			<key>unattended_install</key>
 			<true/>
 		</dict>
@@ -45,11 +45,11 @@
 			<key>MozillaURLProvider</key>
 			<dict>
 				<key>git_hash</key>
-				<string>8574c91661dc067f31a486239fd8f5685c6f4fa0</string>
+				<string>92758e3756ac9f090e69531b0821ebf1842c899c</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/Mozilla/MozillaURLProvider.py</string>
 				<key>sha256_hash</key>
-				<string>6f9a06392557c46d5dfccc1daf9455d69e86b6f705f7abbfc60474ffbeae0a77</string>
+				<string>9f9ae9a7416e59067ba92dde475b925595daa9ac436e82467e1b97bacbb6856b</string>
 			</dict>
 		</dict>
 		<key>parent_recipes</key>
@@ -57,20 +57,20 @@
 			<key>com.github.autopkg.download.firefox-rc-en_US</key>
 			<dict>
 				<key>git_hash</key>
-				<string>ee4380374058507eaef81f21a28a8045396ab190</string>
+				<string>00f9b0ea8aa77716c0875f9aff6f1281cbf8d84d</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/Mozilla/Firefox.download.recipe</string>
 				<key>sha256_hash</key>
-				<string>eec7d3edd86e8fbf5cb75d53de7a85a966bf9eea1a8abc663dd52d2740fb9831</string>
+				<string>6d17ddeb226c88af7b4bdef7f981634f2da18403e0ebb86afeb5cfbdf4dc5237</string>
 			</dict>
 			<key>com.github.autopkg.munki.firefox-rc-en_US</key>
 			<dict>
 				<key>git_hash</key>
-				<string>8332edca4fbafc1e8aff8c119e571f27b4853bb5</string>
+				<string>b8ebd97b7fc92cc4a9dc382ccc2ff8090c1b8f21</string>
 				<key>path</key>
 				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/Mozilla/Firefox.munki.recipe</string>
 				<key>sha256_hash</key>
-				<string>ca589a917fa5251ad39071dd49b168ed9c6549f4b085e706ea541829c3ec426d</string>
+				<string>3c0f6aa5c32194c854a6ff406525c603ffa5e33776d2509f574a7651fed3967d</string>
 			</dict>
 		</dict>
 	</dict>

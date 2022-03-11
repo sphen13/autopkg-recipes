@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Daylite</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/Daylite</string>
+		<key>NAME</key>
+		<string>Daylite</string>
+		<key>SPARKLE_FEED_URL</key>
+		<string>https://www.marketcircle.com/appcasts/daylite.xml</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>blocking_applications</key>
+			<array>
+				<string>Daylite.app</string>
+				<string>Mail.app</string>
+			</array>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Daylite keeps everything related to your business in one place, so you and your team can share information wherever they are by Mac, iPhone, and iPad. Your contacts, schedule, tasks, projects, sales opportunities, emails, and notes are all there, making it easy to find what you are looking for in seconds.</string>
+			<key>display_name</key>
+			<string>Daylite</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>postinstall_script</key>
+			<string>#!/bin/sh
+
+# Daylite postinstall
+# Installs Daylite Mail Assistant
+
+dmaPkg="/Applications/Daylite.app/Contents/Resources/Packages/InstallDMA.pkg"
+
+if [ ! -f "${dmaPkg}" ]
+then
+	/bin/echo "ERROR: Daylite Mail Assistant package not found."
+	exit 1
+fi
+
+/usr/sbin/installer -verbose -pkg "${dmaPkg}" -target /</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.bradclare.munki.daylite</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.bradclare.download.daylite</key>
+			<dict>
+				<key>git_hash</key>
+				<string>952d30a50cef101e2ec2c7f05b0424fd79bdc806</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.bradclare-recipes/Daylite/Daylite.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>f73214aa541739f08682638b5bc30f8afe3f24d6c7ec5b87b59cab98b52cb088</string>
+			</dict>
+			<key>com.github.bradclare.munki.daylite</key>
+			<dict>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.bradclare-recipes/Daylite/Daylite.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>507d3305ab4908490c6a5f65ff3c78c133a672398e844fb2a87665a9fa430bf7</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

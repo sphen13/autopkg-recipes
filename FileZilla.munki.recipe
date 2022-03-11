@@ -18,6 +18,8 @@
 			<array>
 				<string>testing</string>
 			</array>
+			<key>category</key>
+			<string>File Sharing</string>
 			<key>description</key>
 			<string>FileZilla is a fast and reliable cross-platform FTP, FTPS and SFTP client.</string>
 			<key>display_name</key>
@@ -26,8 +28,6 @@
 			<string>%NAME%</string>
 			<key>unattended_install</key>
 			<true/>
-      <key>category</key>
-      <string>File Sharing</string>
 		</dict>
 	</dict>
 	<key>ParentRecipe</key>

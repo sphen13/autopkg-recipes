@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Google Chrome Universal</string>
+	<key>Input</key>
+	<dict>
+		<key>BUILD</key>
+		<string>Universal</string>
+		<key>DOWNLOAD_URL</key>
+		<string>https://dl.google.com/chrome/mac/universal/stable/GGRO/googlechrome.dmg</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+    <string>apps/google</string>
+		<key>NAME</key>
+    <string>GoogleChrome</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
+			<key>display_name</key>
+			<string>Google Chrome</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>supported_architectures</key>
+			<array>
+				<string>x86_64</string>
+				<string>arm64</string>
+			</array>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.dataJAR-recipes.munki.Google Chrome Universal</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.dataJAR-recipes.munki.Google Chrome Universal</key>
+			<dict>
+				<key>git_hash</key>
+				<string>2e4740f90faadc2e27bdf7cf84e3a2434dcda6be</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/Google Chrome Universal/Google Chrome Universal.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>d278098771921142eade50ee2e8f57d626c85e3e3c5a414d55b50232e4f2ee06</string>
+			</dict>
+			<key>com.github.rtrouton.download.googlechromeuniversal</key>
+			<dict>
+				<key>git_hash</key>
+				<string>cbd494a7374691369e2918a90c96a8d4d3f01950</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.rtrouton-recipes/GoogleChromeUniversal/GoogleChromeUniversal.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>a40e9007d17a6d9791632d0dd754a9c8c6eb0bb034d2397fbfa4c6647dc4040d</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>
